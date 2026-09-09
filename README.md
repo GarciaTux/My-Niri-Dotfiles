@@ -18,3 +18,4 @@ These configurations were based on my favorite distro, CRUX. They were made on A
 - Niri
 - Waybar
 - Kitty
+- Fastfetch
