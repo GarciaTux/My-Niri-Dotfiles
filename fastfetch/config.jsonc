@@ -3,13 +3,13 @@
   "logo": {
     "source": "crux",
     "color": {
-      "1": "light_blue",  // Muda o azul escuro da logo para azul claro
-      "2": "yellow"       // Muda o roxo da logo para amarelo
+      "1": "light_blue",  
+      "2": "yellow"       
     }
   },
   "display": {
     "color": {
-      "keys": "yellow"    // Muda o texto roxo da direita para amarelo
+      "keys": "yellow"    
     }
   },
   "modules": [
