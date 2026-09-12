@@ -1,0 +1,89 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": [
+        "niri/workspaces",
+        "niri/window",
+        "mpris"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "custom/power"
+    ],
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "●",
+            "default": "○"
+        },
+        "sort-by-id": true,
+        "on-click": "activate",
+        "on-scroll-up": "focus-workspace-up",
+        "on-scroll-down": "focus-workspace-down"
+    },
+
+    "niri/window": {
+        "format": "{title}",
+        "max-length": 60,
+        "separate-outputs": false
+    },
+    "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%d/%m/%Y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+},
+    "pulseaudio": {
+    "format": "♫  {volume}%",
+    "format-muted": "🛇 Muted",
+    "states": {
+        "muted": 0
+    }
+}, 
+    "custom/power": {
+    "format" : " ⏻ ",
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "~/.config/waybar/power_menu.xml",
+        "menu-actions": {
+            "shutdown": "shutdown",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate"
+            
+        }
+},
+
+    "mpris": {
+    "format": "♫  {title} — {artist}",
+    "format-paused": "Ⅱ  {title} — {artist}",
+    "format-stopped": "♫  Nothing playing",
+    "max-length": 35,
+    "ellipsis": "…",
+    "tooltip-format": "{player}\n{title} — {artist}",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next"
+}
+
+}
+
