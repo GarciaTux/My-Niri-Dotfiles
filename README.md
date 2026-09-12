@@ -22,8 +22,6 @@ a consistent visual style.
 | Launcher | Fuzzel |
 | Terminal | Kitty |
 | File Manager | Dolphin |
-| Notifications | Mako |
-| Lock Screen | Swaylock |
 | Music | Playerctl / MPRIS |
 
 ## ✦ Features
@@ -34,16 +32,4 @@ a consistent visual style.
 - Custom Kitty theme
 - Media controls
 - Power menu
-- Screenshot shortcuts
-- Consistent dark color scheme
-- Lightweight Arch Linux setup
 
-## ✦ Color palette
-
-```text
-Background   #11151c
-Surface      #1c2129
-Foreground   #d8dee9
-Blue         #3f76e6
-Light Blue   #6f9ce8
-Gray         #64727d
