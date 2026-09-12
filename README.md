@@ -58,7 +58,7 @@ blue accents inspired by CRUX.
 ### Fuzzel
 
 <p align="center">
-  <img src="img/fuzzel.png" alt="Fuzzel" width="700">
+  <img src="img/fuzzel.png" alt="Fuzzel" width="900">
 </p>
 
 ## ✦ Color Palette
