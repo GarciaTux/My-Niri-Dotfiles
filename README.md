@@ -1,7 +1,7 @@
 # My Niri Dotfiles 🐟
 
-A aquatic-themed Linux desktop environment built around
-[Niri](https://github.com/YaLTeR/niri) and Arch Linux.
+A aquatic-themed Linux dotfiles for
+[Niri](https://github.com/YaLTeR/niri) and Arch Linux
 
 <p align="center">
   <img src="img/desktop.png" alt="Desktop" width="900">
@@ -12,8 +12,7 @@ A aquatic-themed Linux desktop environment built around
 This repository contains my personal Linux desktop
 configuration, featuring a soothing oceanic visual style.
 
-The setup is built around Niri, Waybar, and a collection
-of customized applications with soft cyan and oceanic blue tones.
+The setup is built around Niri, Waybar, and a some customized applications with soft cyan and oceanic blue tones.
 It also includes 10 different fish images to cycle through in the terminal/Fastfetch!
 
 Wallpaper by [orangci/walls-catppuccin-mocha](https://github.com/orangci/walls-catppuccin-mocha).
@@ -43,7 +42,7 @@ Wallpaper by [orangci/walls-catppuccin-mocha](https://github.com/orangci/walls-c
 ### Kitty
 
 <p align="center">
-  <img src="img/kitty.png" alt="Desktop" width="900">
+  <img src="img/Kitty.png" alt="kitty" width="900">
 </p>
 
 ### Fuzzel
