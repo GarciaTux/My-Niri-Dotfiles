@@ -1,0 +1,143 @@
+
+@define-color salmon       #C6B9E8;
+@define-color salmon_dark  #8EBFE8;
+@define-color coral        #F0CFE0;
+
+@define-color seafoam      #9DDEDF;
+@define-color aqua         #A7D3F2;
+@define-color sand         #F0DED2;
+
+@define-color foam         #E8EDF8;
+@define-color deep         #30384F;
+@define-color deep2        #3A4662;
+@define-color deep3        #465675;
+@define-color line         #586B8D;
+@define-color muted        #8E9DBB;
+
+* {
+    font-family: "Nunito",
+                 "JetBrainsMono Nerd Font",
+                 "Symbols Nerd Font",
+                 "Noto Color Emoji",
+                 sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+window#waybar {
+    background: @deep;
+    border-bottom: 2px solid @salmon_dark;
+}
+
+tooltip {
+    background: @deep;
+    border: 1px solid @salmon_dark;
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: @foam;
+    padding: 12px 12px;
+}
+
+#island-left,
+#clock,
+#island-right {
+    background: @deep;
+    border: 2px solid @salmon_dark;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0 0 1px 1px;
+}
+
+#island-left {
+    margin: 0 6px 0 11px;
+    padding: 2px 3px 3px;
+}
+
+#island-right {
+    margin: 0 11px;
+    padding: 4px 3px 3px;
+}
+
+#clock {
+    padding: 0 23px;
+    background: @deep2;
+}
+
+#clock:hover {
+    background: @deep3;
+}
+
+#custom-launcher {
+    padding: 1px 3px 0 7px;
+    font-size: 18px;
+    color: @seafoam;
+}
+
+#workspaces {
+    background: @deep2;
+    border: 1px solid @line;
+    border-radius: 13px;
+    padding: 1px 3.1px;
+    margin: 0 5px 0 2.5px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: @salmon_dark;
+    padding: 0 4px;
+}
+
+#workspaces button.active {
+    color: @seafoam;
+}
+
+#workspaces button.empty {
+    color: @muted;
+    opacity: 0.5;
+}
+
+#workspaces button.urgent {
+    color: @coral;
+}
+
+#window {
+    color: @foam;
+    background: @deep3;
+    border: 1px solid @line;
+    border-radius: 14px;
+    padding: 0.5px 10px;
+    margin: 0 2px;
+}
+
+#window.empty {
+    color: @muted;
+    background: @deep2;
+}
+
+#pulseaudio {
+    color: @aqua;
+    padding: 0 8px;
+}
+
+#pulseaudio:hover {
+    color: @seafoam;
+}
+
+#pulseaudio.muted {
+    color: @muted;
+}
+
+#tray {
+    color: @salmon;
+    padding: 1px 8px;
+}
+
+#custom-power {
+    padding: 0 10px 0 10px;
+}
+
+#custom-power:hover {
+    color: @sand;
+}

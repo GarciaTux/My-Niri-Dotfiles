@@ -1,0 +1,87 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 10,
+  "margin-top": 0,                
+  "reload_style_on_change": true,  
+
+  "modules-left":   ["group/island-left"],
+  "modules-center": ["clock"],
+  "modules-right":  ["group/island-right"],
+
+  "group/island-left": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/launcher",   
+      "niri/workspaces",   
+      "niri/window"        
+    ]
+  },
+
+  "group/island-right": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",        
+      "tray",              
+      "custom/power"       
+    ]
+  },
+
+  "custom/launcher": {
+    "format": "🐟",
+    "tooltip": false,
+    "on-click": "fuzzel"
+  },
+
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "🐠",
+      "default": "🫧"
+    }
+  },
+
+  "niri/window": {
+    "format": "{title}",
+    "min-length": 30,             
+    "max-length": 30,
+    "align": 0.5
+    },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%A, %d %B}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "weeks-pos": "right"
+    },
+    "actions": {
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "\uf026  muted",
+    "format-icons": {
+      "default": ["\uf027", "\uf028"]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+  
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
+
+  
+  "custom/power": {
+    "format": "\uf011",
+    "tooltip": false,
+    "on-click": "~/.config/fuzzel/powermenu.sh"
+  }
+}
