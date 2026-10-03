@@ -3,8 +3,6 @@
 A aquatic-themed Linux desktop environment built around
 [Niri](https://github.com/YaLTeR/niri) and Arch Linux.
 
-> Inspired by my favorite distribution, CRUX, with a peaceful underwater vibe.
-
 <p align="center">
   <img src="img/desktop.png" alt="Desktop" width="900">
 </p>
